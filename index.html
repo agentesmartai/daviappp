@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Centrado con Fondo Transparente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: transparent; /* Fondo transparente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif; /* Tipografía Roboto */
+            color: black; /* Color del texto */
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .arrow {
+            font-size: 40px; /* Tamaño de la flecha */
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p>Soy el asistente virtual de la Línea 130 de Denuncia Ciudadana. Mi objetivo es resolver tus dudas, guiarte en el proceso y asegurarte de que sepas cómo utilizar la plataforma para hacer llegar tus preocupaciones a las autoridades correspondientes. ¡Estoy aquí para apoyarte en todo lo que necesites!</p>
+        <p>Nota aclaratoria: No siempre responderé 100% exacto, pero siempre haré mi mejor esfuerzo para ayudarte.</p>
+        <p>Para interactuar mejor conmigo, por favor:</p>
+        <ul style="list-style-type:none; padding-left: 0;">
+            <li>• Haz tus preguntas de forma clara y concisa</li>
+            <li>• Evita usar jerga o expresiones coloquiales</li>
+        </ul>
+        <div class="arrow">➡️</div> <!-- Flecha con efecto de pulsación -->
+    </div>
+
+</body>
+</html>
